@@ -1,5 +1,9 @@
 user_prompt = "Enter a TODO: "
-user_text = input(user_prompt)
-print(user_text)
+todo1 = input(user_prompt)
+todo2 = input(user_prompt)
+todo3 = input(user_prompt)
 
-# 009
+todos = [todo1, todo2, todo3, 4]
+
+print(todos)
+print(type(todo1))
