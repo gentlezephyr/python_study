@@ -24,4 +24,3 @@ while True:
             print("Bye!")
             break
         
-#006
