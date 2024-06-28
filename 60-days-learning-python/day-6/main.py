@@ -4,17 +4,21 @@ while True:
 
     match user_prompt:
         case "add":
-           todo = input("Enter a TODO: ") # + "\n" Could be used.
-           file = open("todos.txt", "r")
-           todos = file.readlines()
-           file.close()
-           
-           todos.append(f"{todo.capitalize()}\n")
-           
-           file = open("todos.txt", "w") # Overwrite the file with the new TODOs. We can use "a" argument too.
-           file.writelines(todos) # \n is used to add a new line.
-           file.close()
+            todo = input("Enter a TODO: ")  # + "\n" Could be used.
+            file = open("files/todos.txt", "r")
+            todos = file.readlines()
+            file.close()
+
+            todos.append(f"{todo.capitalize()}\n")
+
+            file = open("files/todos.txt", "w")  # Overwrite the file with the new TODOs. We can use "a" argument too.
+            file.writelines(todos)  # \n is used to add a new line.
+            file.close()
         case "show":
+            file = open("files/todos.txt", "r")
+            todos = file.readlines()
+            file.close()
+
             for index, item in enumerate(todos):
                 row = f"{index + 1}. {item}"
                 print(row)
@@ -29,4 +33,5 @@ while True:
         case "exit":
             print("Bye!")
             break
-        
+
+#006

@@ -104,3 +104,5 @@ This is a safer and more concise way to handle file operations in Python.
 - Use the `with` statement for better resource management.
 
 By following these guidelines, you can effectively manage file operations in Python.
+
+To use especial characters in a string such as the path to a file, we can use _r"path to\something\todos.txt"_
