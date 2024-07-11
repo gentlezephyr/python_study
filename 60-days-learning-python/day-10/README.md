@@ -1,0 +1,1 @@
+Today I learned about error handling which is quite useful in programming.

@@ -7,7 +7,7 @@ while True:
             todo = input("Enter a TODO: ")  # + "\n" Could be used.
             file = open("files/todos.txt", "r")
             todos = file.readlines()
-            file.close()
+            file.close() # Testing purposes.
 
             todos.append(f"{todo.capitalize()}\n")
 
