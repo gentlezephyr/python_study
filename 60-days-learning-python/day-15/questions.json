@@ -1,0 +1,27 @@
+[
+    {
+        "item": "What function is used to display messages on the screen in Python?",
+        "options": ["print", "echo", "display", "show"],
+        "answer": 1
+    },
+    {
+        "item": "What operator is used for multiplication in Python?",
+        "options": ["*", "x", "/", "+"],
+        "answer": 1
+    },
+    {
+        "item": "What keyword is used to define a function in Python?",
+        "options": ["function", "def", "fun", "define"],
+        "answer": 2
+    },
+    {
+        "item": "How do you start a comment in Python?",
+        "options": ["#", "//", "--", "/*"],
+        "answer": 1
+    },
+    {
+        "item": "What function is used to read user input in Python?",
+        "options": ["input", "read", "get", "scan"],
+        "answer": 1
+    }
+]
