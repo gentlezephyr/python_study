@@ -7,7 +7,7 @@ if not os.path.exists('todos.txt'):
     with open('todos.txt', 'w') as file:
         pass
 
-sg.theme('DarkPurple')
+sg.theme('Black')
 
 
 def gui_row(input_text, button_add):
@@ -67,7 +67,10 @@ while True:
             except IndexError:
                 sg.Popup('Select an item first!')
         case 'todos':
-            window['todo'].update(value=values['todos'][0])
+            if values['todos'] and values['todos'][0] != '':
+                window['todo'].update(value=values['todos'][0])
+            else:
+                sg.Popup("There's nothing here!")
         case 'Exit':
             break
         case sg.WINDOW_CLOSED:
