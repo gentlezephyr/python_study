@@ -25,8 +25,17 @@ for index, row in df.iterrows():
 
     footer_creator(pdf, row['Topic'])
 
+    y_position = 21
+    for j in range(0, 27):
+        pdf.line(10, y_position, 200, y_position)
+        y_position += 10
+
     for i in range(row['Pages'] - 1):
         pdf.add_page()
+        y_position = 21
+        for j in range(0, 27):
+            pdf.line(10, y_position, 200, y_position)
+            y_position += 10
         footer_creator(pdf, row['Topic'])
 
 # pdf.add_page()
